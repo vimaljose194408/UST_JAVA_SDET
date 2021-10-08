@@ -1,0 +1,161 @@
+1.	Create an array of 10 elements and print them using the for each loop?
+
+
+package com.ust.test;
+
+public class Programprint {
+
+
+public static void main(String[] args) {
+	int[] ar= {1,3,5,7,9,2,4,6,8,0};
+	for(int i=0; i<9; i++) {
+		System.out.println(ar[i]);
+	}
+
+}
+
+}
+
+
+
+
+
+OUTPUT
+1
+3
+5
+7
+9
+2
+4
+6
+8
+
+
+
+2.	Take the number input from the console and add all the positive numbers ?
+
+
+
+
+
+
+package com.ust.test;
+
+import java.util.Scanner;
+
+public class Printpositivenumber {
+
+public static void main(String[] args) 
+{
+    int b, sum = 0;
+    try (Scanner s = new Scanner(System.in)) {
+		System.out.print("Enter no of elements to add:");
+		b = s.nextInt();
+		int a[] = new int[b];
+		System.out.println("Enter the numbers:");
+		for(int i = 0; i < b; i++)
+		{
+		    a[i] = s.nextInt();
+		    sum = sum + a[i];
+		}
+	}
+    System.out.println("Sum:"+sum);
+}
+}
+
+
+
+
+
+
+
+OUTPUT
+Enter no of elements to add:3
+Enter the numbers:
+14
+55
+44
+Sum:113
+
+
+
+3.	Create a labelled break and write a simple logic and execute the program?
+
+
+package com.ust.test;
+
+public class Programlabell {
+
+
+
+public static void main(String[] args) {   
+    first:
+    for( int i = 1; i < 5; i++) {
+    	System.out.println(i);
+    	 if ( i == 3)
+                break first;
+        second:
+        for(int j = 10; j < 13; j ++ ) {
+            System.out.println(j);
+           
+        }
+    }
+}
+}
+
+
+
+
+
+OUTPUT
+
+1
+10
+11
+12
+2
+10
+11
+12
+3
+
+
+4.	Do the addition of around 10 even numbers, but use the continue statement in the logic?
+
+
+package com.ust.test;
+import java.util.Scanner;
+
+public class Program1 {
+	
+
+	  public static void main(String[] args) {
+		  int sum=0;
+		  Scanner s=new Scanner(System.in);
+		  int a[] = new int[5];
+		  System.out.println("Enter the numbers:");
+	      for(int i = 0; i < 5; i++)
+	      {
+	    	  
+	          a[i] = s.nextInt();
+	          if (a[i]%2!=0) {
+	        	  continue;
+	          }
+	          sum = sum + a[i];
+	      }
+		  
+	 
+	    System.out.println(sum);
+	    
+	  }
+	}
+
+OUTPUT :
+Enter the numbers:
+1
+2
+4
+5
+6
+12
